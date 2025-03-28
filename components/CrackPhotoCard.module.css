@@ -28,10 +28,6 @@
   align-items: center;
   gap: 8px;
   z-index: 1; /* 카드보다 뒤 */
-  opacity: 0.5;
-}
-
-.folderIcon {
 }
 
 .selectedDateText {
