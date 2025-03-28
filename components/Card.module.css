@@ -1,0 +1,159 @@
+/* components/Card.module.css */
+.card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.month {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.dayHeader {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #aaa;
+  padding-bottom: 5px;
+}
+
+.date {
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.date:not(:empty):hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.mapPlaceholder {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  color: #eee;
+}
+
+.imagePlaceholder {
+  background-color: #444;
+  padding: 30px;
+  border-radius: 4px;
+  text-align: center;
+  color: #eee;
+}
+
+.graphPlaceholder {
+  background-color: #444;
+  padding: 40px;
+  border-radius: 4px;
+  text-align: center;
+  color: #eee;
+}
+
+/* components/Card.module.css */
+/* (CalendarCard.module.css와 동일) */
+
+.rankingItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rank {
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.progressBar {
+  background-color: #555;
+  border-radius: 5px;
+  height: 10px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.progress {
+  background-color: #ff6b6b;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* components/Card.module.css */
+/* (CalendarCard.module.css와 동일) */
+
+.unknownPlaceholder {
+  background-color: #444;
+  padding: 50px;
+  border-radius: 4px;
+  text-align: center;
+  color: #eee;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/* components/Card.module.css */
+/* ... 기존 스타일 유지 ... */
+
+.imageDisplay {
+  /* display: flex; 제거 */
+  padding: 20px;
+  text-align: center;
+  background-color: #444;
+  border-radius: 4px;
+  color: #eee;
+  width: 400px; /* 원하는 너비로 설정 */
+  height: 300px; /* 원하는 높이로 설정 */
+  overflow: auto; /* 영역을 벗어나는 이미지 부분 숨김 (확인 또는 추가) */
+  position: relative; /* 추가 */
+}
+
+.imageContainer {
+  width: 100%; /* 부모 요소 크기 유지 */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  max-width: 100%; /* 부모 요소보다 커지지 않음 */
+  max-height: 100%; /* 부모 요소보다 커지지 않음 */
+  width: auto; /* 원래 비율 유지 */
+  height: auto; /* 원래 비율 유지 */
+  object-fit: contain; /* 이미지가 비율을 유지하면서 줄어듦 */
+}
+
+.placeholder {
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+}

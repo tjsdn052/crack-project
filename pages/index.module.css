@@ -1,0 +1,21 @@
+/* pages/index.module.css */
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 컬럼 */
+  gap: 20px; /* 카드 사이 간격 */
+  padding: 20px;
+}
+
+/* 작은 화면에서 2컬럼으로 변경 */
+@media (max-width: 1024px) {
+  .dashboardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 더 작은 화면에서 1컬럼으로 변경 */
+@media (max-width: 768px) {
+  .dashboardGrid {
+    grid-template-columns: 1fr;
+  }
+}

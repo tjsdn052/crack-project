@@ -1,0 +1,75 @@
+/* components/Header.module.css */
+.header {
+  /* 기존 스타일 유지 */
+  color: #fff;
+  display: flex;
+  justify-content: space-between; /* 추가: 요소들을 양쪽 끝으로 배치 */
+  align-items: center;
+  height: 100%; /* 부모 높이 채우기 */
+}
+.headerText {
+  color: #a5a6b9;
+  font-family: Pretendard;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04375rem;
+  margin-left: 1.69rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  display: flex; /* 이미지를 이름과 함께 배치하기 위해 flex 추가 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+.userAvatar {
+  margin-top: 0.94rem;
+  margin-bottom: 0.94rem;
+}
+
+.userName {
+  margin-left: 1.37rem;
+  margin-right: 3.69rem; /* 추가: 나머지 공간을 userName이 차지 */
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.userIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #555;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+/* 추가할 스타일 */
+.headerContainer {
+  height: 4.9375rem;
+  width: 109.4375rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  border: 1px solid #060629;
+  background: #131739;
+  margin-top: 0.94rem;
+  margin-bottom: 2.5rem;
+  /* display: flex; */ /* 제거: 불필요한 flex 설정 제거 */
+  /* align-items: center; */ /* 제거: 불필요한 flex 설정 제거 */
+  /* justify-content: center; */
+}
